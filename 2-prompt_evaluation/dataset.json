@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL like 's3://my-bucket.s3.us-west-2.amazonaws.com/key'. Return the region code."
+    "task": "Parse an AWS CloudWatch alarm name to extract the environment (dev/staging/prod) and service name using a regular expression",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract environment and service name from alarm names formatted as 'service-name-environment-alarm' and handle edge cases like hyphens in service names"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an IAM role with a trust relationship allowing EC2 instances to assume it."
+    "task": "Write a Python function that takes an AWS S3 bucket name and returns whether it complies with AWS naming rules (3-63 characters, lowercase, no underscores)",
+    "format": "python",
+    "solution_criteria": "Function should validate all AWS S3 bucket naming constraints and return a boolean, with optional error messages for debugging"
   },
   {
-    "task": "Write a regular expression that validates an AWS IAM role ARN format (e.g., 'arn:aws:iam::123456789012:role/MyRole')."
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies runtime, timeout, memory allocation, and environment variables for a Node.js microservice",
+    "format": "json",
+    "solution_criteria": "JSON should include valid Lambda configuration keys (Runtime, Timeout, MemorySize, Environment) with realistic values and proper syntax"
   }
 ]
